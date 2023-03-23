@@ -1,5 +1,6 @@
 import Sidebar from '@/components/Sidebar'
 import './globals.css'
+import Header from '@/components/Header'
 
 export const metadata = {
   title: 'Amazon Web Scraper',
@@ -17,8 +18,9 @@ export default function RootLayout({
         {/* Sidebar */}
         <Sidebar />
 
-        <main className="p-10 max-w-7xl">
+        <main className="p-10 max-w-7xl w-full mx-auto overflow-y-auto">
           {/* Header */}
+          <Header />
           {children}
         </main>
       </body>
